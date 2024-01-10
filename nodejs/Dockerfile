@@ -8,9 +8,9 @@ RUN         apt update \
 
 RUN         npm install typescript ts-node @types/node --location=global
 
-RUN	npm i npm@latest -g && \
+RUN	    npm i npm@latest -g && \
             npm i yarn -g && \
-	npm i pm2 -g 
+	    npm i pm2 -g 
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
